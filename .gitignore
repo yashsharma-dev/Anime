@@ -1,0 +1,9 @@
+# Node
+/frontend/node_modules/
+
+# Laravel
+/backend/vendor/
+/backend/.env
+
+# MySQL Database (optional, if you want to exclude large database dumps)
+/database/*.sql
