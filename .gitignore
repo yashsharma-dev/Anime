@@ -1,0 +1,13 @@
+# Node modules (React)
+Frontend/node_modules/
+
+# Laravel vendor files
+Backend/vendor/
+
+# Laravel environment
+Backend/.env
+
+# Laravel cache and storage
+Backend/storage/*
+!Backend/storage/.gitignore
+Backend/bootstrap/cache/*
