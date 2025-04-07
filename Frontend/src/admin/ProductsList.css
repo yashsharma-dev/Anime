@@ -1,0 +1,191 @@
+/* General Styles */
+.products-list-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    padding: 16px;
+}
+
+.add-product-link {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-product-link a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.add-product-link a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styles */
+.products-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    color: #f3f4f6;
+}
+
+.table-header {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-header th {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    color: #f3f4f6;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.table-body {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-row:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.image-cell {
+    padding: 16px;
+}
+
+.anime-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.name-cell,
+.year-cell,
+.description-cell,
+.language-cell,
+.episode-cell,
+.edit-cell,
+.remove-cell {
+    padding: 12px 16px;
+    color: #f3f4f6;
+    white-space: nowrap;
+}
+
+.description-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edit-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .products-list-container {
+        width: 100%;
+        margin: 10px;
+        padding: 8px;
+    }
+
+    .add-product-link a {
+        font-size: 1rem;
+    }
+
+    .products-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .table-header th {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .table-row td {
+        padding: 8px;
+    }
+
+    .anime-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    .description-cell {
+        max-width: 150px;
+    }
+
+    .name-cell,
+    .year-cell,
+    .description-cell,
+    .language-cell,
+    .episode-cell,
+    .edit-cell,
+    .remove-cell {
+        padding: 8px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-list-container {
+        margin: 5px;
+        padding: 4px;
+    }
+
+    .add-product-link a {
+        font-size: 0.9rem;
+    }
+
+    .table-header th {
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+
+    .table-row td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .anime-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .description-cell {
+        max-width: 100px;
+    }
+}

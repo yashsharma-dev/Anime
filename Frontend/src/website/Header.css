@@ -1,0 +1,402 @@
+ header {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    position:fixed;
+    z-index: 2;
+    background-color:#000;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap:15px ;
+    padding: 0 15px;
+
+}
+
+
+header .logo #icon {
+    font-size: 30px;
+    color: #fff;
+    
+}
+header h1 {
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+h1 svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+header h1 {
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+h1 svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+/* Full text: "Anime Nebula" (Visible when screen is 650px or more) */
+.full-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Short text: "A N" (Hidden when screen is 650px or more) */
+.short-text {
+    display: none;
+}
+
+/* A and N styling */
+.a {
+    color: #fdd835; /* Yellow color */
+    font-weight: bold;
+}
+
+.n {
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 650px) {
+    .full-text {
+        display: none;
+    }
+
+    .short-text {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+  
+header  h1 span > span {
+    color: #fdd835  ;
+}
+
+header .search {
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 5px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    height: 40px;
+    
+}
+
+header .search input {
+    background-color: #1e1e1e;
+    cursor: pointer;
+    width: 95%;
+    padding: 3px 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}
+
+
+header .search #search-icon {
+    width: 10%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    right:0;
+    margin: auto;
+}
+
+header .function {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0 20px;
+
+}
+header .function .language{
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    
+    
+}
+
+
+header .function .language > button:nth-child(1)  {
+    border: none;
+    border:1px solid grey  ;
+    border-radius: 10% 0% 0% 10%;;
+    outline: none;
+    background-color:rgb(128, 128, 128);
+    color: #fff;
+
+    padding: 5px 15px;
+}
+
+
+header .function .language > button:nth-child(2){
+    border: none;
+    border:1px solid grey  ;
+    border-radius: 0% 10% 10% 0%;;
+    outline: none;
+    background-color:#1e1e1e;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+header .function .language > button:hover{
+    background-color: rgb(59, 58, 58);
+}
+
+header .function .link {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    gap: 7px;
+
+
+
+}
+
+header .function .link i {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+
+}
+
+header .function .link i:hover{
+    background-color: #1e1e1e;
+    transition: 0.5s;
+    
+}
+
+
+header .function > button{
+    padding: 10px 18px ;
+    background:#fdd835;
+    border: none;
+    color: #000;
+    font-size: 13px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+header .function > button:active{
+  
+    background:#aa9122;
+
+}
+
+header .hidden-icon{
+    color: white;
+    margin-right: 10px;
+    display: none;
+    
+}
+
+header #SI{
+    color: white;
+    display: none;
+}
+
+
+.scroll{
+
+    width: 100%;
+    height: 40%;
+    position: fixed;
+    margin-top: 65px;
+    display: none;
+    top: -520px;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 0 0 50 #1e1e1e;
+    
+}
+
+
+.scroll> .n {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    height: 25%;
+    width: 100%;
+    background-color:var(--light_grey);
+
+    /* border: #fdd835 2px solid; */
+ 
+} 
+
+
+.scroll .n h1{
+    text-transform: capitalize;
+    color:#fff;
+}
+
+.scroll .i{
+    margin-left: 10px;
+    color:#fff;
+    font-size: 27px;
+}
+
+.scroll .b{
+    position: relative;
+
+}
+
+.scroll .b >.btn{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    
+}
+
+.scroll .b  .btn > button:first-child{
+    
+  
+    border-radius: 5px 0 0 5px;
+}
+
+.scroll .b  .btn > button:last-child{
+    
+  
+    border-radius: 0px 5px 5px 0px;
+}
+
+.scroll .b  .btn > button{
+    background-color:grey;
+    border-radius: 5px 0 0 5px;
+    height: 30px;
+    width: 70px;
+    border: none;
+}
+
+
+.scroll .b  .btn > button:hover{
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+.scroll .b  .btn > button:active{
+    background-color:rgba(78, 78, 22, 0.725);
+    color: #fdd835;
+}
+
+
+
+@media (max-width:950px) and (min-width:768px)  {
+
+   
+    header .function {
+        display: none;
+    }
+
+    header .hidden-icon{
+        display: block;
+    }
+    .scroll{
+        display: block;
+    }
+}
+
+
+@media (max-width:768px) and (min-width:550px) {
+
+    
+
+
+    header .function {
+        display: none;
+    }
+
+    header .hidden-icon{
+        display: block;
+    }
+
+    .scroll{
+        display: block;
+    }
+}
+
+@media (max-width:550px) and (min-width:300px){
+    header .search:not(#search-icon){
+        display: none;
+
+    }
+
+    header #SI{
+        display: block;
+        font-size: 20px;
+    }
+    
+    header .search #search-icon{
+        display: block;
+        font-size: 20px;
+    }
+    header .function {
+        display: none;
+    }
+
+    header .hidden-icon{
+        display: block;
+    }
+    .scroll{
+        display: block;
+    }
+} 
+
+@media (max-width:500px) and (min-width:300px){
+    .admin{
+        width: 200px;
+    }
+}

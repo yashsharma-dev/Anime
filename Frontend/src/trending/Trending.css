@@ -1,0 +1,94 @@
+
+/* Flexbox for Cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    /* background-color: blue; */
+}
+
+.card-wrapper-trending{
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1 1 calc(16.66% - 15px);
+    /* Adjust for 5 cards per row */
+    max-width: 226px;
+    min-width: 150px;
+    max-height: 350px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1250px) {
+  .card-wrapper {
+    flex: 1 1 calc(20% - 15px); /* 5 cards per row */
+  }
+}
+
+@media (min-width: 1251px) {
+  .card-wrapper {
+    flex: 1 1 calc(16.66% - 15px); /* 6 cards per row */
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-wrapper {
+    flex: 1 1 calc(25% - 15px); /* 4 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex: 1 1 calc(33.33% - 15px);
+        /* 3 cards per row */
+    }
+}
+
+@media (max-width:660px) {
+    .header{
+        height: 115px;
+    }
+}
+
+@media (max-width: 550px) {
+    .card-wrapper {
+        flex: 1 1 calc(50% - 15px);
+        /* 2 cards per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .card-wrapper {
+        flex: 1 1 100%;
+        /* 1 card per row */
+    }
+}
+@media (max-width: 430px) and (min-width:401px) {
+    .filter-button {
+
+        padding: 4px 25px;
+
+    }
+}
+@media (max-width: 400px) and (min-width:361px) {
+    .filter-button {
+
+        padding: 4px 20px;
+
+    }
+}
+@media (max-width: 361px) and (min-width:300px) {
+    .filter-button {
+
+        padding: 4px 15px;
+
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

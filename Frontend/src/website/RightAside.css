@@ -1,0 +1,124 @@
+.release{
+    background-color: rgb(32, 31, 31);
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 0px 5px rgb(63, 61, 61);
+    top: 75px;
+    padding: 10px;
+    height: fit-content;
+    width: 17%;
+
+}
+
+.release .today {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.release .today  h1{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+
+
+.release .today  button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: var(--yellow);
+}
+
+.release .today  button:hover{
+    background-color: rgb(105, 105, 31);
+    color: white;
+}
+
+
+.release >h3{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.release .soon {
+    width: 100%;
+    height: calc(100% - 130px);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.release .soon .chapter {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    
+}
+.release .soon .chapter:hover{
+
+    background-color: grey;
+   
+}
+
+.release .soon .chapter img{
+    height: 55px;
+    width: 40px;
+ 
+    object-fit: contain;
+}
+
+.release .soon .chapter  .name {
+    height: 55px;
+    width: 80%;
+    margin: 5px;
+    position: relative;
+
+}
+
+
+.release .soon .chapter .name h2 {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+.release .soon .chapter .name h3 {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    font-size: 15px;
+    color: white;
+   
+
+}
+
+
+
+
+@media (max-width:1260px) and (min-width:900px)  {
+    .release{
+        width: 30%;
+    }
+}
+
+
+@media (max-width:900px) and (min-width:300px) {
+    .release{
+        display: none;
+    }
+}

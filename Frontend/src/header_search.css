@@ -1,0 +1,117 @@
+#hidden_search-icon{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+.mobile_input{
+    position: relative;
+    top: 0;
+}
+
+
+
+@media (max-width:2250px) and (min-width:768px)  {
+
+   
+    header #hidden_search-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width:768px) and (min-width:550px) {
+    
+    header #hidden_search-icon {
+        display: none;
+    }
+}
+
+@media (max-width:550px) and (min-width:300px) {
+
+    .search {
+        display: none;
+    }
+
+    .mobile-search-icon {
+        display: block;
+    }
+
+    /* Full-Screen Overlay */
+    /* Full-Screen Overlay */
+.mobile-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened background */
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adjust padding for spacing */
+}
+
+/* Search Input */
+.mobile-search-overlay .search-container {
+    position: absolute;
+    top: 20px;  /* Moves input to the top */
+    width: 80%;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px ridge white;
+}
+
+/* Input Field */
+.mobile-search-overlay input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Close Icon */
+.close-icon {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+    /* Suggestions */
+    .suggestions {
+        width: 90%;
+        background: white;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .suggestions li {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .suggestions li img {
+        margin-right: 10px;
+    }
+
+    .suggestions li:hover {
+        background-color: #f0f0f0;
+    }
+}

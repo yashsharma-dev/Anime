@@ -1,0 +1,161 @@
+.frontpage-container {
+    position: relative;
+    max-width: 100vw;
+    height: fit-content;
+    padding: 75px 20px 20px 20px;
+    /* background-color: #f82f2f; */
+    color: white;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    height: 55px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.header-title h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* background-color: green; */
+}
+
+.filter-button{
+
+    background:transparent;
+
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+}
+.nav-button {
+    
+    background:var(--grey);
+    color: white;
+    border: none;
+    padding: 2px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 5px;
+}
+
+.filter-button:hover,
+.nav-button:hover {
+    background: #555;
+}
+
+.nav-button:disabled {
+    background: #222;
+    cursor: not-allowed;
+}
+
+/* Flexbox for Cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    /* background-color: blue; */
+}
+
+.card-wrapper {
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1 1 calc(16.66% - 15px);
+    /* Adjust for 5 cards per row */
+    max-width: 226px;
+    min-width: 150px;
+    max-height: 350px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1250px) {
+  .card-wrapper {
+    flex: 1 1 calc(20% - 15px); /* 5 cards per row */
+  }
+}
+
+@media (min-width: 1251px) {
+  .card-wrapper {
+    flex: 1 1 calc(16.66% - 15px); /* 6 cards per row */
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-wrapper {
+    flex: 1 1 calc(25% - 15px); /* 4 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex: 1 1 calc(33.33% - 15px);
+        /* 3 cards per row */
+    }
+}
+
+@media (max-width:660px) {
+    .header{
+        height: 115px;
+    }
+}
+
+@media (max-width: 550px) {
+    .card-wrapper {
+        flex: 1 1 calc(50% - 15px);
+        /* 2 cards per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .card-wrapper {
+        flex: 1 1 100%;
+        /* 1 card per row */
+    }
+}
+@media (max-width: 430px) and (min-width:401px) {
+    .filter-button {
+
+        padding: 4px 25px;
+
+    }
+}
+@media (max-width: 400px) and (min-width:361px) {
+    .filter-button {
+
+        padding: 4px 20px;
+
+    }
+}
+@media (max-width: 361px) and (min-width:300px) {
+    .filter-button {
+
+        padding: 4px 15px;
+
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
